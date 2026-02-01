@@ -162,7 +162,8 @@ torchvision==0.22.0
 tqdm==4.67.1
 traitlets==5.14.3
 transformers==4.55.0
-triton==3.4.0
+# triton==3.4.0
+triton==3.3.0
 trl==0.21.0
 typing-inspection==0.4.1
 typing_extensions==4.14.1

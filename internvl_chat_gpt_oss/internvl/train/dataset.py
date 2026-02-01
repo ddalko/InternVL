@@ -35,6 +35,47 @@ from .constants import (CLIP_MEAN, CLIP_STD, IMAGENET_MEAN, IMAGENET_STD,
 from internvl.utils.s3_fileio import Client
 
 
+def ensure_newline_after_last_image(value: str) -> str:
+    """Ensure there is a newline after each chunk of consecutive '<image>' tags.
+    
+    For example:
+    - '<image><image>Text' -> '<image><image>\nText'
+    - '<image><image>\nText <image><image>End' -> '<image><image>\nText <image><image>\nEnd'
+    - '<image>\nOK' -> '<image>\nOK' (no change)
+    """
+    if not isinstance(value, str):
+        return value
+    
+    tag = '<image>'
+    if tag not in value:
+        return value
+    
+    # Find all positions where <image> tags end
+    result = []
+    i = 0
+    while i < len(value):
+        # Check if we're at the start of an <image> tag
+        if value[i:i+len(tag)] == tag:
+            # Start of an image chunk - collect consecutive <image> tags
+            chunk_start = i
+            while i < len(value) and value[i:i+len(tag)] == tag:
+                i += len(tag)
+            # i now points to the character after the last <image> in this chunk
+            
+            # Add the chunk of <image> tags
+            result.append(value[chunk_start:i])
+            
+            # Check if we need to add a newline
+            if i < len(value) and value[i] != '\n':
+                result.append('\n')
+        else:
+            # Regular character, just append it
+            result.append(value[i])
+            i += 1
+    
+    return ''.join(result)
+
+
 def calculate_ngram_repetition(text, n):
     words = text.split()
     ngrams = [tuple(words[i:i+n]) for i in range(len(words)-n+1)]
@@ -325,6 +366,8 @@ def preprocess_pretrain(
         new_conversations = []
         current_image_idx = 0
         for conversation in conversations:
+            # Ensure newline after last <image>
+            conversation['value'] = ensure_newline_after_last_image(conversation['value'])
             image_cnt = conversation['value'].count('<image>')
             for i in range(image_cnt):
                 if current_image_idx == num_image:
@@ -400,7 +443,8 @@ def preprocess_internvl2_5(
     assert len(sources) == 1, 'process only the first conversations'
     conversations = sources[0]
 
-    if conversations[0]['from'] == 'system':
+    # Check if the first message is a system prompt (from='system' or from=None)
+    if conversations[0]['from'] == 'system' or conversations[0]['from'] is None:
         system_prompt = conversations[0]['value']
         conversations = conversations[1:]  # remove system prompt
     else:
@@ -412,6 +456,8 @@ def preprocess_internvl2_5(
         new_conversations = []
         current_image_idx = 0
         for conversation in conversations:
+            # Ensure newline after last <image>
+            conversation['value'] = ensure_newline_after_last_image(conversation['value'])
             if conversation['from'] == 'human':
                 image_cnt = conversation['value'].count('<image>')
                 for i in range(image_cnt):
@@ -432,11 +478,16 @@ def preprocess_internvl2_5(
         if conversation['from'] == 'human':
             batches.append(f'<|im_start|>user\n{conversation["value"]}<|im_end|>\n')
             roles.append('human')
-        elif conversation['from'] == 'gpt':
+        elif conversation['from'] == 'gpt' or conversation['from'] == 'assistant':
             batches.append(f'<|im_start|>assistant\n{conversation["value"]}<|im_end|>\n')
             roles.append('gpt')
+        elif conversation['from'] == 'system' or conversation['from'] is None:
+            # Handle system prompts that appear in the middle of conversations
+            # or when 'from' is None (which typically indicates a system message)
+            batches.append(f'<|im_start|>system\n{conversation["value"]}<|im_end|>\n')
+            roles.append('system')
         else:
-            raise NotImplementedError
+            raise NotImplementedError(f"Unknown conversation role: {conversation['from']}")
 
     add_bos_token = getattr(tokenizer, 'add_bos_token', False)
     if add_bos_token:  # for InternLM series
@@ -471,7 +522,8 @@ def preprocess_internvl2_5(
     input_ids = torch.tensor(np.concatenate(final_input_ids))[:tokenizer.model_max_length]
     targets = torch.tensor(np.concatenate(final_targets))[:tokenizer.model_max_length]
 
-    padding = False if group_by_length or use_packed_ds else True
+    # padding = False if group_by_length or use_packed_ds else True
+    padding = False
     if padding:
         current_length = input_ids.size(0)
         padding_length = tokenizer.model_max_length - current_length
@@ -514,6 +566,8 @@ def preprocess_internvl3_5_gpt_oss(
         new_conversations = []
         current_image_idx = 0
         for conversation in conversations:
+            # Ensure newline after last <image>
+            conversation['value'] = ensure_newline_after_last_image(conversation['value'])
             if conversation['from'] == 'human':
                 image_cnt = conversation['value'].count('<image>')
                 for i in range(image_cnt):
@@ -530,7 +584,7 @@ def preprocess_internvl3_5_gpt_oss(
     if system_prompt is not None:
         batches.append(f'<|start|>system<|message|>{system_prompt}<|end|>')
         roles.append('system')
-    for conversation in conversations:
+    for i, conversation in enumerate(conversations):
         if conversation['from'] == 'human':
             batches.append(f'<|start|>user<|message|>{conversation["value"]}<|end|>')
             roles.append('human')
@@ -620,6 +674,8 @@ def preprocess_internvl3_5_gpt_oss_with_think(
         new_conversations = []
         current_image_idx = 0
         for conversation in conversations:
+            # Ensure newline after last <image>
+            conversation['value'] = ensure_newline_after_last_image(conversation['value'])
             if conversation['from'] == 'human':
                 image_cnt = conversation['value'].count('<image>')
                 for i in range(image_cnt):

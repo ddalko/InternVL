@@ -172,3 +172,9 @@ data_process/
 
 batchscript-*
 results/
+
+.vscode/
+internvl_chat/logs
+internvl_chat/work_dirs
+internvl_chat_gpt_oss/logs
+internvl_chat_gpt_oss/work_dirs

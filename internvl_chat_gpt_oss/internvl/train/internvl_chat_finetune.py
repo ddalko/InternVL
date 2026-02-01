@@ -22,6 +22,7 @@ import torch.distributed as dist
 import numpy as np
 import transformers
 
+from decord import VideoReader, cpu
 from PIL import Image, ImageFile, PngImagePlugin, UnidentifiedImageError
 from torch.utils.data import Dataset
 from transformers import (
@@ -29,6 +30,7 @@ from transformers import (
     HfArgumentParser, Trainer, TrainingArguments,
     set_seed,
 )
+from transformers import TrainerCallback
 from transformers.trainer_utils import get_last_checkpoint
 from transformers.utils.logging import enable_default_handler, enable_explicit_format, set_verbosity
 
@@ -43,6 +45,7 @@ from internvl.patch import (
     replace_qwen3_attention_class,
     replace_gpt_oss_with_flash_sink_attn,
 )
+from internvl.train.wandb_utils import init_wandb, finish_wandb
 from internvl.train.constants import (
     BOX_END_TOKEN, BOX_START_TOKEN,
     IMG_END_TOKEN, IMG_START_TOKEN,  IMG_CONTEXT_TOKEN,
@@ -252,6 +255,10 @@ class DataTrainingArguments:
         default=False,
         metadata={'help': 'Whether to split annotations to save memory usage. Default is False.'},
     )
+    debug_data_loading: bool = field(
+        default=False,
+        metadata={'help': 'Enable verbose debug logging for data loading. Default is False.'},
+    )
 
 
 class LazySupervisedDataset(Dataset):
@@ -286,12 +293,14 @@ class LazySupervisedDataset(Dataset):
         distributed_mode=False,
         force_shuffle=False,
         random_seed=0,
+        debug_data_loading=False,
     ):
         super(LazySupervisedDataset, self).__init__()
         self.ds_name = ds_name
         self.tokenizer = tokenizer
         self.template_name = template_name
         self.num_image_token = num_image_token
+        self.debug_data_loading = debug_data_loading
         # logger.info(f'[Dataset] num_image_token: {num_image_token}')
         # logger.info(f'[Dataset] dynamic_image_size: {dynamic_image_size}')
         # logger.info(f'[Dataset] use_thumbnail: {use_thumbnail}')
@@ -364,6 +373,10 @@ class LazySupervisedDataset(Dataset):
         self.max_dynamic_patch = max_dynamic_patch
         self.normalize_type = normalize_type
         self.num_fake_dump = 0
+        
+        # Token length statistics tracking
+        self.token_length_stats = []
+        self.log_token_stats_interval = 1000  # Log every 1000 samples
 
         # If the precomputed length does not exist, roughly estimate the length of
         # each sample to improve the efficiency of group_by_length.
@@ -408,6 +421,10 @@ class LazySupervisedDataset(Dataset):
         # Load the image using tcs_loader if available, otherwise use PIL
         if self.tcs_loader is not None and 's3://' in image_path:
             return self.tcs_loader(image_path)
+        
+        if self.debug_data_loading:
+            print(f"[LOAD_IMAGE_DEBUG] ds_name='{self.ds_name}', path={image_path}", flush=True)
+            print(f"[LAZY_LOAD] Using lazy loading for: {image_path}", flush=True)
         return Image.open(image_path).convert('RGB')
 
     def get_image_path(self, image_path):
@@ -430,8 +447,13 @@ class LazySupervisedDataset(Dataset):
         transform = self.get_transform()
 
         # Ensure the first conversation contains an image placeholder
-        first_turn_idx = 1 if data_item['conversations'][0]['value'] == 'system' else 0
-        if '<image>' not in data_item['conversations'][first_turn_idx]['value']:
+        first_turn_idx = 1 if data_item['conversations'][0]['from'] == 'system' or data_item['conversations'][0]['from'] is None else 0
+        
+        # Check if <image> token exists anywhere in conversations
+        has_image_token = any('<image>' in conv.get('value', '') for conv in data_item['conversations'])
+        
+        if not has_image_token:
+            # Add <image> token to the first human turn
             data_item['conversations'][first_turn_idx]['value'] = '<image>\n' + data_item['conversations'][first_turn_idx]['value']
 
         # Merge the image path
@@ -443,6 +465,12 @@ class LazySupervisedDataset(Dataset):
         if self.dynamic_image_size:  # If dynamic image size is enabled, preprocess the image dynamically
             images = dynamic_preprocess(image, min_num=self.min_dynamic_patch, max_num=self.max_dynamic_patch,
                                         image_size=self.image_size, use_thumbnail=self.use_thumbnail)
+            # For r1-onevision, force load pixel data for all preprocessed images
+            # because dynamic_preprocess creates new PIL objects that are lazy
+            if 'r1-onevision' in self.ds_name:
+                for img in images:
+                    img.load()
+                print(f"[EAGER_LOAD_POSTPROCESS] Loaded {len(images)} patches for {image_path}", flush=True)
         else:  # Otherwise, use the original image as a single patch
             images = [image]
 
@@ -469,7 +497,11 @@ class LazySupervisedDataset(Dataset):
         position_ids = ret['attention_mask'].long().cumsum(-1) - 1
         position_ids.masked_fill_(ret['attention_mask'] == 0, 1)
         image_end_token_id = self.tokenizer.convert_tokens_to_ids(IMG_END_TOKEN)
-        assert (ret['input_ids'][0] == image_end_token_id).sum() == 1, f'image tokens are truncated, this dataset is {self.ds_name}'
+        
+        # Check if image tokens are truncated - if so, skip this data item
+        actual_image_count = (ret['input_ids'][0] == image_end_token_id).sum().item()
+        if actual_image_count != 1:
+            raise ValueError(f'Image tokens are truncated ({actual_image_count}/1), skipping this sample from {self.ds_name}')
 
         # Create the final return dictionary
         ret = dict(
@@ -487,9 +519,16 @@ class LazySupervisedDataset(Dataset):
         transform = self.get_transform()
 
         # Ensure the first conversation contains an image placeholder
-        first_turn_idx = 1 if data_item['conversations'][0]['value'] == 'system' else 0
-        if '<image>' not in data_item['conversations'][first_turn_idx]['value']:
-            data_item['conversations'][first_turn_idx]['value'] = '<image>\n' * len(data_item['image']) + data_item['conversations'][first_turn_idx]['value']
+        first_turn_idx = 1 if data_item['conversations'][0]['from'] == 'system' or data_item['conversations'][0]['from'] is None else 0
+        
+        # Count existing <image> tokens in conversations
+        total_image_tokens = sum(conv.get('value', '').count('<image>') for conv in data_item['conversations'])
+        num_image = len(data_item['image'])
+        
+        # If not enough <image> tokens, add them to the first human turn
+        if total_image_tokens < num_image:
+            missing_tokens = num_image - total_image_tokens
+            data_item['conversations'][first_turn_idx]['value'] = '<image>\n' * missing_tokens + data_item['conversations'][first_turn_idx]['value']
 
         images, num_tiles = [], []
         num_image = len(data_item['image'])
@@ -502,6 +541,10 @@ class LazySupervisedDataset(Dataset):
                 image = dynamic_preprocess(image, min_num=self.min_dynamic_patch,
                                            max_num=max(1, self.max_dynamic_patch // num_image),
                                            image_size=self.image_size, use_thumbnail=self.use_thumbnail)
+                # For r1-onevision, force load pixel data for all preprocessed images
+                if 'r1-onevision' in self.ds_name:
+                    for img in image:
+                        img.load()
                 images += image
                 num_tiles.append(len(image))
             else:  # Otherwise, use the original image as a single patch
@@ -525,7 +568,11 @@ class LazySupervisedDataset(Dataset):
         position_ids = ret['attention_mask'].long().cumsum(-1) - 1
         position_ids.masked_fill_(ret['attention_mask'] == 0, 1)
         image_end_token_id = self.tokenizer.convert_tokens_to_ids(IMG_END_TOKEN)
-        assert (ret['input_ids'][0] == image_end_token_id).sum() == num_image, f'image tokens are truncated, this dataset is {self.ds_name}'
+        
+        # Check if image tokens are truncated - if so, skip this data item
+        actual_image_count = (ret['input_ids'][0] == image_end_token_id).sum().item()
+        if actual_image_count != num_image:
+            raise ValueError(f'Image tokens are truncated ({actual_image_count}/{num_image}), skipping this sample from {self.ds_name}')
 
         # Create the final return dictionary
         ret = dict(
@@ -543,28 +590,51 @@ class LazySupervisedDataset(Dataset):
         transform = self.get_transform()
 
         # Ensure the first conversation contains a video placeholder
-        first_turn_idx = 1 if data_item['conversations'][0]['value'] == 'system' else 0
-        if '<video>' not in data_item['conversations'][first_turn_idx]['value']:
+        first_turn_idx = 1 if data_item['conversations'][0]['from'] == 'system' or data_item['conversations'][0]['from'] is None else 0
+        
+        # Check if <video> token exists anywhere in conversations
+        has_video_token = any('<video>' in conv.get('value', '') for conv in data_item['conversations'])
+        
+        if not has_video_token:
+            # Add <video> token to the first human turn
             data_item['conversations'][first_turn_idx]['value'] = '<video>\n' + data_item['conversations'][first_turn_idx]['value']
 
         # Get the video file path
         video_file = data_item['video']
         video_path = os.path.join(self.root, video_file)
 
-        # Load the video frames using tcs_loader
-        # TODO: Load videos without using tcsloader.
-        image_list = self.tcs_loader(
-            video_path,
-            image_type='video',
-            max_num_frames=self.max_num_frame,
-            min_num_frames=self.min_num_frame,
-            sample=self.sampling_method,
-            clip=data_item.get('clip', None))
+        # Load the video frames using VideoReader
+        vr = VideoReader(video_path, ctx=cpu(0))
+        total_frames = len(vr)
+        
+        # Determine number of frames to sample
+        if self.sampling_method == 'uniform':
+            num_frames = min(self.max_num_frame, total_frames)
+            num_frames = max(self.min_num_frame, num_frames)
+            
+            # Uniformly sample frames
+            indices = np.linspace(0, total_frames - 1, num_frames, dtype=int)
+        else:
+            # Default: sample evenly spaced frames
+            num_frames = min(self.max_num_frame, total_frames)
+            num_frames = max(self.min_num_frame, num_frames)
+            indices = np.linspace(0, total_frames - 1, num_frames, dtype=int)
+        
+        # Extract frames
+        frames = vr.get_batch(indices).asnumpy()
+        image_list = [Image.fromarray(frame) for frame in frames]
 
         # Generate special tokens for each video frame
         special_tokens = '\n'.join(['Frame-{}: <image>'.format(i + 1) for i in range(len(image_list))])
-        data_item['conversations'][first_turn_idx]['value'] = data_item['conversations'][first_turn_idx]['value'].replace(
-            '<video>\n', special_tokens + '\n')
+        
+        # Replace <video> token with frame tokens (handle both <video>\n and <video>)
+        conversation_value = data_item['conversations'][first_turn_idx]['value']
+        if '<video>\n' in conversation_value:
+            data_item['conversations'][first_turn_idx]['value'] = conversation_value.replace(
+                '<video>\n', special_tokens + '\n')
+        elif '<video>' in conversation_value:
+            data_item['conversations'][first_turn_idx]['value'] = conversation_value.replace(
+                '<video>', special_tokens + '\n')
 
         # Transform each frame image and stack them into a tensor
         pixel_values = [transform(image) for image in image_list]
@@ -584,6 +654,12 @@ class LazySupervisedDataset(Dataset):
         # Calculate position_ids for packed dataset
         position_ids = ret['attention_mask'].long().cumsum(-1) - 1
         position_ids.masked_fill_(ret['attention_mask'] == 0, 1)
+        
+        # Check if image tokens are truncated - if so, skip this data item
+        image_end_token_id = self.tokenizer.convert_tokens_to_ids(IMG_END_TOKEN)
+        actual_image_count = (ret['input_ids'][0] == image_end_token_id).sum().item()
+        if actual_image_count != num_patches:
+            raise ValueError(f'Image tokens are truncated ({actual_image_count}/{num_patches}), skipping this sample from {self.ds_name}')
 
         # Create the final return dictionary
         ret = dict(
@@ -726,10 +802,24 @@ class LazySupervisedDataset(Dataset):
                 break
             except Exception as e:
                 try_cnt += 1
-                # print(e, self.ds_name, flush=True)
-                # if not isinstance(e, (UnidentifiedImageError, FileNotFoundError)):
-                #     traceback.print_exc()
+                # Add detailed error logging
+                print(f'[ERROR] Exception in dataset {self.ds_name}, try_cnt={try_cnt}/{max_try}', flush=True)
+                print(f'[ERROR] Exception type: {type(e).__name__}, message: {str(e)}', flush=True)
+                
                 data_item = json.loads(self.raw_data[i])
+                
+                # Log data item type
+                has_image = 'image' in data_item and len(data_item.get('image', '')) != 0
+                has_video = 'video' in data_item and data_item.get('video') is not None and data_item.get('video') != ''
+                is_text_only = not has_image and not has_video
+                print(f'[ERROR] Data item type: has_image={has_image}, has_video={has_video}, is_text_only={is_text_only}', flush=True)
+                
+                # Print traceback for non-common errors
+                if not isinstance(e, (UnidentifiedImageError, FileNotFoundError)):
+                    import traceback
+                    print(f'[ERROR] Traceback:', flush=True)
+                    traceback.print_exc()
+                
                 if 'image' in data_item:
                     if type(data_item['image']) == list:
                         images = [self.root + item for item in data_item['image']]
@@ -743,7 +833,25 @@ class LazySupervisedDataset(Dataset):
                 elif 'video' in data_item:
                     data_path = os.path.join(self.root, data_item['video'])
                     print(f'Failed to load video: {data_path}, the dataset is: {self.ds_name}')
+                else:
+                    print(f'[ERROR] Text-only data failed to process. Sample conversations: {data_item.get("conversations", [])[:1]}', flush=True)
+                
                 i = random.randint(0, len(self.raw_data) - 1)
+        
+        # Track token length statistics
+        if ret is not None and 'input_ids' in ret:
+            token_length = len(ret['input_ids'])
+            self.token_length_stats.append(token_length)
+            
+            # Log statistics periodically
+            if len(self.token_length_stats) % self.log_token_stats_interval == 0:
+                import numpy as np
+                stats = np.array(self.token_length_stats)
+                logger.info(f'[{self.ds_name}] Token length statistics (n={len(stats)}):')
+                logger.info(f'  Min: {stats.min()}, Max: {stats.max()}, Mean: {stats.mean():.1f}, Median: {np.median(stats):.1f}')
+                logger.info(f'  P90: {np.percentile(stats, 90):.1f}, P95: {np.percentile(stats, 95):.1f}, P99: {np.percentile(stats, 99):.1f}')
+                logger.info(f'  Samples > max_length({self.tokenizer.model_max_length}): {(stats >= self.tokenizer.model_max_length).sum()}')
+        
         return ret
 
     def __iter__(self):
@@ -780,6 +888,7 @@ def build_datasets(
     max_num_frame=32,
     normalize_type='imagenet',
     split_annotations=False,
+    debug_data_loading=False,
 ):
     datasets = []
     lengths = []
@@ -812,6 +921,7 @@ def build_datasets(
             repeat_time=repeat_time,
             normalize_type=normalize_type,
             split_annotations=split_annotations,
+            debug_data_loading=debug_data_loading,
             # hyperparameters for packed training
             use_packed_ds=data_args.use_packed_ds,
             data_rank=data_rank,
@@ -921,6 +1031,9 @@ def main():
     # Set seed before initializing model.
     set_seed(training_args.seed)
 
+    # Initialize Weights & Biases integration
+    wandb_enabled, wandb_callbacks = init_wandb(training_args, model_args, data_args)
+
     # Load pretrained model, tokenizer, and image processor
     tokenizer_path = model_args.model_name_or_path or model_args.llm_path
     logger.info(f'Loading Tokenizer: {tokenizer_path}')
@@ -937,7 +1050,16 @@ def main():
                   REF_END_TOKEN, BOX_START_TOKEN, BOX_END_TOKEN]
     num_new_tokens = tokenizer.add_tokens(token_list, special_tokens=True)
     img_context_token_id = tokenizer.convert_tokens_to_ids(IMG_CONTEXT_TOKEN)
-    tcs_loader = TCSLoader('petreloss.conf') if use_tcs_loader else None
+    
+    # Initialize TCS loader only if enabled and config file exists
+    tcs_loader = None
+    if use_tcs_loader:
+        try:
+            tcs_loader = TCSLoader('petreloss.conf')
+            logger.info('TCS Loader initialized successfully')
+        except Exception as e:
+            logger.warning(f'Failed to initialize TCS Loader: {e}')
+            logger.warning('Video loading will use decord.VideoReader instead')
 
     if model_args.use_liger:
         raise NotImplementedError
@@ -1067,6 +1189,7 @@ def main():
         min_num_frame=data_args.min_num_frame,
         max_num_frame=data_args.max_num_frame,
         split_annotations=data_args.split_annotations,
+        debug_data_loading=data_args.debug_data_loading,
     )
 
     def _freeze_params(module):
@@ -1129,6 +1252,7 @@ def main():
         eval_dataset=None,
         tokenizer=tokenizer,
         data_collator=collator,
+        callbacks=wandb_callbacks if len(wandb_callbacks) > 0 else None,
     )
 
     # Training
@@ -1151,6 +1275,10 @@ def main():
         trainer.log_metrics('train', metrics)
         trainer.save_metrics('train', metrics)
         trainer.save_state()
+
+    # Finish wandb run
+    if wandb_enabled:
+        finish_wandb()
 
 
 if __name__ == '__main__':
