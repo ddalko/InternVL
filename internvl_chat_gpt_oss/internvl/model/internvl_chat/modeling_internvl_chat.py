@@ -149,8 +149,20 @@ class InternVLChatModel(PreTrainedModel):
 
         input_embeds = input_embeds.reshape(B, N, C)
 
-        for layer in self.language_model.model.layers:
-            layer.self_attn.cu_seqlens = cu_seqlens
+        # Handle both normal model and LoRA-wrapped model
+        llm_model = self.language_model
+        if hasattr(llm_model, 'base_model'):
+            # PEFT model (LoRA applied)
+            llm_model = llm_model.base_model
+            if hasattr(llm_model, 'model'):
+                llm_model = llm_model.model
+        elif hasattr(llm_model, 'model'):
+            # Normal model
+            llm_model = llm_model.model
+        
+        if hasattr(llm_model, 'layers'):
+            for layer in llm_model.layers:
+                layer.self_attn.cu_seqlens = cu_seqlens
 
         outputs = self.language_model(
             inputs_embeds=input_embeds,

@@ -1,0 +1,212 @@
+{
+  "ai2d": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/ai2d/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/ai2d/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1983
+  },
+  "ai2d(internvl)": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/ai2d(internvl)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/ai2d(internvl)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8584
+  },
+  "chart2text": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/chart2text/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/chart2text/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4383
+  },
+  "doc_vqa": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/doc_vqa/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/doc_vqa/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1938
+  },
+  "dvqa(cauldron,llava_format)-00000": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/dvqa(cauldron,llava_format)/train-00000-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/dvqa(cauldron,llava_format)/train-00000-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "dvqa(cauldron,llava_format)-00001": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/dvqa(cauldron,llava_format)/train-00001-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/dvqa(cauldron,llava_format)/train-00001-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "dvqa(cauldron,llava_format)-00002": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/dvqa(cauldron,llava_format)/train-00002-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/dvqa(cauldron,llava_format)/train-00002-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 6814
+  },
+  "geo170k(qa)-00000": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00000-of-00004",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00000-of-00004.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "geo170k(qa)-00001": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00001-of-00004",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00001-of-00004.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "geo170k(qa)-00002": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00002-of-00004",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00002-of-00004.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "geo170k(qa)-00003": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00003-of-00004",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00003-of-00004.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1840
+  },
+  "Geometry3K(MathV360K)": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/Geometry3K(MathV360K)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/Geometry3K(MathV360K)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4663
+  },
+  "geomverse": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geomverse/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/geomverse/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4838
+  },
+  "iconqa(cauldron,llava_format)": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/iconqa(cauldron,llava_format)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/iconqa(cauldron,llava_format)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8193
+  },
+  "IconQA(MathV369K)": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/IconQA(MathV369K)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/IconQA(MathV369K)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 7371
+  },
+  "infographic_vqa": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/infographic_vqa/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/infographic_vqa/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2235
+  },
+  "infographic(gpt4v)": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/infographic(gpt4v)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/infographic(gpt4v)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 321
+  },
+  "intergps": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/intergps/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/intergps/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 640
+  },
+  "raven": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/raven/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/raven/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1486
+  },
+  "robut_WTQ-00000": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/robut_WTQ/train-00000-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/robut_WTQ/train-00000-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "robut_WTQ-00001": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/robut_WTQ/train-00001-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/robut_WTQ/train-00001-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "robut_WTQ-00002": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/robut_WTQ/train-00002-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/robut_WTQ/train-00002-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4197
+  },
+  "scienceqa(cauldron,llava_format)": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/scienceqa(cauldron,llava_format)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/scienceqa(cauldron,llava_format)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 3178
+  },
+  "scienceqa(nona_context)-00000": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/scienceqa(nona_context)/train-00000-of-00002",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/scienceqa(nona_context)/train-00000-of-00002.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "scienceqa(nona_context)-00001": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/scienceqa(nona_context)/train-00001-of-00002",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/scienceqa(nona_context)/train-00001-of-00002.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 3156
+  },
+  "screen2words": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/screen2words/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/screen2words/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1555
+  },
+  "vistext": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/vistext/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/vistext/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1294
+  },
+  "visual7w(cauldron,llava_format)": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/visual7w(cauldron,llava_format)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/visual7w(cauldron,llava_format)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 3225
+  },
+  "VizWiz(MathV360K)": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/VizWiz(MathV360K)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/VizWiz(MathV360K)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1831
+  },
+  "vsr(cauldron,llava_format)": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/vsr(cauldron,llava_format)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/vsr(cauldron,llava_format)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 942
+  }
+}

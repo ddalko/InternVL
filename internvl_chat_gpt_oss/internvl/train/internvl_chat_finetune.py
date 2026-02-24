@@ -23,6 +23,7 @@ import numpy as np
 import transformers
 
 from decord import VideoReader, cpu
+from peft import LoraConfig, get_peft_model
 from PIL import Image, ImageFile, PngImagePlugin, UnidentifiedImageError
 from torch.utils.data import Dataset
 from transformers import (
@@ -1205,15 +1206,89 @@ def main():
         _freeze_params(model.language_model)
 
     if model_args.unfreeze_lm_head:
-        model.language_model.lm_head.requires_grad = True
+        for param in model.language_model.lm_head.parameters():
+            param.requires_grad = True
+    
+    def manual_wrap_backbone_lora(model, args):
+        if getattr(args, "use_backbone_lora", 0) and args.use_backbone_lora > 0:
+            vision_target_modules = ["qkv", "proj", "fc1", "fc2"]
+            vision_config = LoraConfig(
+                r=args.use_backbone_lora,
+                lora_alpha=2 * args.use_backbone_lora,
+                target_modules=vision_target_modules,
+                lora_dropout=0.05,
+                bias="none",
+            )
 
-    if model_args.use_backbone_lora:
-        model.wrap_backbone_lora(r=model_args.use_backbone_lora, lora_alpha=2 * model_args.use_backbone_lora)
-        model.config.use_backbone_lora = model_args.use_backbone_lora
+            if hasattr(model, "vision_model"):
+                model.vision_model = get_peft_model(model.vision_model, vision_config)
+                model.vision_model.print_trainable_parameters()
+                model.config.use_backbone_lora = args.use_backbone_lora
+            else:
+                raise AttributeError("Model has no attribute `vision_model` (check InternVL module name).")
+        return model
+
+    def manual_wrap_llm_lora(model, args):
+        if getattr(args, "use_llm_lora", 0) and args.use_llm_lora > 0:
+            llm_target_modules = ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+            llm_config = LoraConfig(
+                r=args.use_llm_lora,
+                lora_alpha=2 * args.use_llm_lora,
+                target_modules=llm_target_modules,
+                lora_dropout=0.05,
+                bias="none",
+                task_type="CAUSAL_LM",
+            )
+
+            if hasattr(model, "language_model"):
+                model.language_model = get_peft_model(model.language_model, llm_config)
+                model.language_model.print_trainable_parameters()
+                model.config.use_llm_lora = args.use_llm_lora
+            else:
+                raise AttributeError("Model has no attribute `language_model`.")
+
+        return model
+    
+    if model_args.use_backbone_lora :
+        if hasattr(model, "wrap_backbone_lora"):
+            model.wrap_backbone_lora(r=model_args.use_backbone_lora, lora_alpha=2 * model_args.use_backbone_lora)
+            model.config.use_backbone_lora = model_args.use_backbone_lora
+        else:
+            model = manual_wrap_backbone_lora(model, model_args)
 
     if model_args.use_llm_lora:
-        model.wrap_llm_lora(r=model_args.use_llm_lora, lora_alpha=2 * model_args.use_llm_lora)
-        model.config.use_llm_lora = model_args.use_llm_lora
+        if hasattr(model, "wrap_llm_lora"):
+            model.wrap_llm_lora(r=model_args.use_llm_lora, lora_alpha=2 * model_args.use_llm_lora)
+            model.config.use_llm_lora = model_args.use_llm_lora
+        else:
+            model = manual_wrap_llm_lora(model, model_args)
+    
+    # Re-enable gradient checkpointing after LoRA wrapping
+    # This is critical for PeftModel to work properly with gradient checkpointing
+    if model_args.grad_checkpoint:
+        if model_args.use_llm_lora > 0:
+            # Enable input gradients for frozen base model with LoRA adapters
+            if hasattr(model.language_model, 'enable_input_require_grads'):
+                model.language_model.enable_input_require_grads()
+                logger.info('Enabled input_require_grads for LLM LoRA')
+            
+            # Re-apply gradient checkpointing for PeftModel
+            if hasattr(model.language_model, 'base_model'):
+                # For PeftModel, set gradient checkpointing on base_model
+                if hasattr(model.language_model.base_model, '_set_gradient_checkpointing'):
+                    model.language_model.base_model._set_gradient_checkpointing()
+                    logger.info('Re-enabled gradient_checkpointing for LLM after LoRA wrapping')
+        
+        if model_args.use_backbone_lora > 0:
+            if hasattr(model.vision_model, 'enable_input_require_grads'):
+                model.vision_model.enable_input_require_grads()
+                logger.info('Enabled input_require_grads for Vision LoRA')
+    
+    hit = 0
+    for n, p in model.named_parameters():
+        if p.requires_grad and "lora" in n.lower():
+            hit += 1
+    print("trainable LoRA tensors:", hit)
 
     if model_args.freeze_mlp:
         _freeze_params(model.mlp1)

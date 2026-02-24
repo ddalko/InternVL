@@ -1,0 +1,212 @@
+{
+  "ai2d-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/ai2d/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/ai2d/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1983
+  },
+  "ai2d(internvl)-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/ai2d(internvl)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/ai2d(internvl)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8584
+  },
+  "chart2text-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/chart2text/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/chart2text/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4383
+  },
+  "doc_vqa-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/doc_vqa/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/doc_vqa/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1938
+  },
+  "dvqa(cauldron,llava_format)-korean-00000": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/dvqa(cauldron,llava_format)/train-00000-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/dvqa(cauldron,llava_format)/train-00000-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "dvqa(cauldron,llava_format)-korean-00001": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/dvqa(cauldron,llava_format)/train-00001-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/dvqa(cauldron,llava_format)/train-00001-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "dvqa(cauldron,llava_format)-korean-00002": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/dvqa(cauldron,llava_format)/train-00002-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/dvqa(cauldron,llava_format)/train-00002-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 6814
+  },
+  "geo170k(qa)-korean-00000": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00000-of-00004",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/geo170k(qa)/train-00000-of-00004.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "geo170k(qa)-korean-00001": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00001-of-00004",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/geo170k(qa)/train-00001-of-00004.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "geo170k(qa)-korean-00002": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00002-of-00004",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/geo170k(qa)/train-00002-of-00004.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "geo170k(qa)-korean-00003": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00003-of-00004",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/geo170k(qa)/train-00003-of-00004.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1840
+  },
+  "Geometry3K(MathV360K)-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/Geometry3K(MathV360K)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/Geometry3K(MathV360K)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4663
+  },
+  "geomverse-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geomverse/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/geomverse/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4838
+  },
+  "iconqa(cauldron,llava_format)-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/iconqa(cauldron,llava_format)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/iconqa(cauldron,llava_format)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8193
+  },
+  "IconQA(MathV369K)-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/IconQA(MathV369K)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/IconQA(MathV369K)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 7371
+  },
+  "infographic_vqa-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/infographic_vqa/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/infographic_vqa/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2235
+  },
+  "infographic(gpt4v)-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/infographic(gpt4v)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/infographic(gpt4v)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 321
+  },
+  "intergps-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/intergps/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/intergps/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 640
+  },
+  "raven-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/raven/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/raven/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1486
+  },
+  "robut_WTQ-korean-00000": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/robut_WTQ/train-00000-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/robut_WTQ/train-00000-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "robut_WTQ-korean-00001": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/robut_WTQ/train-00001-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/robut_WTQ/train-00001-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "robut_WTQ-korean-00002": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/robut_WTQ/train-00002-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/robut_WTQ/train-00002-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4197
+  },
+  "scienceqa(cauldron,llava_format)-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/scienceqa(cauldron,llava_format)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/scienceqa(cauldron,llava_format)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 3178
+  },
+  "scienceqa(nona_context)-korean-00000": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/scienceqa(nona_context)/train-00000-of-00002",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/scienceqa(nona_context)/train-00000-of-00002.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "scienceqa(nona_context)-korean-00001": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/scienceqa(nona_context)/train-00001-of-00002",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/scienceqa(nona_context)/train-00001-of-00002.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 3156
+  },
+  "screen2words-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/screen2words/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/screen2words/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1555
+  },
+  "vistext-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/vistext/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/vistext/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1294
+  },
+  "visual7w(cauldron,llava_format)-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/visual7w(cauldron,llava_format)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/visual7w(cauldron,llava_format)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 3225
+  },
+  "VizWiz(MathV360K)-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/VizWiz(MathV360K)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/VizWiz(MathV360K)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1831
+  },
+  "vsr(cauldron,llava_format)-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/vsr(cauldron,llava_format)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/vsr(cauldron,llava_format)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 942
+  }
+}

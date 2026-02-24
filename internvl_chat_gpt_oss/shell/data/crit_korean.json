@@ -1,0 +1,44 @@
+{
+  "CRIT_gqa_train_final_data_cot_korean": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/gqa_train_final_data_cot_korean.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 46382
+  },
+  "CRIT_video_train_final_data_direct_ans_korean": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/video_train_final_data_direct_ans_korean.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8010
+  },
+  "CRIT_scientific_paper_train_final_data_cot_korean": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/scientific_paper_train_final_data_cot_korean.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 27018
+  },
+  "CRIT_gqa_train_final_data_direct_ans_korean": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/gqa_train_final_data_direct_ans_korean.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 40164
+  },
+  "CRIT_scientific_paper_train_final_data_direct_ans_korean": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/scientific_paper_train_final_data_direct_ans_korean.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 27018
+  },
+  "CRIT_video_train_final_data_cot_korean": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/video_train_final_data_cot_korean.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8010
+  }
+}

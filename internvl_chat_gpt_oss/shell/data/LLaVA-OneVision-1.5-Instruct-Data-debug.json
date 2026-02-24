@@ -1,0 +1,10 @@
+{
+  "open_orca/train-00000-of-00002": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/open_orca",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/open_orca/train-00000-of-00002.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 497448,
+    "text_only": true
+  }
+}

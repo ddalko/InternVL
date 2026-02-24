@@ -1,0 +1,3103 @@
+{
+  "ai2d": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/ai2d/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/ai2d/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1983
+  },
+  "ai2d(internvl)": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/ai2d(internvl)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/ai2d(internvl)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8584
+  },
+  "chart2text": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/chart2text/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/chart2text/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4383
+  },
+  "doc_vqa": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/doc_vqa/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/doc_vqa/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1938
+  },
+  "dvqa(cauldron,llava_format)-00000": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/dvqa(cauldron,llava_format)/train-00000-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/dvqa(cauldron,llava_format)/train-00000-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "dvqa(cauldron,llava_format)-00001": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/dvqa(cauldron,llava_format)/train-00001-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/dvqa(cauldron,llava_format)/train-00001-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "dvqa(cauldron,llava_format)-00002": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/dvqa(cauldron,llava_format)/train-00002-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/dvqa(cauldron,llava_format)/train-00002-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 6814
+  },
+  "geo170k(qa)-00000": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00000-of-00004",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00000-of-00004.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "geo170k(qa)-00001": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00001-of-00004",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00001-of-00004.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "geo170k(qa)-00002": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00002-of-00004",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00002-of-00004.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "geo170k(qa)-00003": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00003-of-00004",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00003-of-00004.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1840
+  },
+  "Geometry3K(MathV360K)": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/Geometry3K(MathV360K)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/Geometry3K(MathV360K)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4663
+  },
+  "geomverse": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geomverse/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/geomverse/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4838
+  },
+  "iconqa(cauldron,llava_format)": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/iconqa(cauldron,llava_format)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/iconqa(cauldron,llava_format)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8193
+  },
+  "IconQA(MathV369K)": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/IconQA(MathV369K)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/IconQA(MathV369K)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 7371
+  },
+  "infographic_vqa": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/infographic_vqa/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/infographic_vqa/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2235
+  },
+  "infographic(gpt4v)": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/infographic(gpt4v)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/infographic(gpt4v)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 321
+  },
+  "intergps": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/intergps/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/intergps/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 640
+  },
+  "raven": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/raven/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/raven/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1486
+  },
+  "robut_WTQ-00000": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/robut_WTQ/train-00000-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/robut_WTQ/train-00000-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "robut_WTQ-00001": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/robut_WTQ/train-00001-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/robut_WTQ/train-00001-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "robut_WTQ-00002": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/robut_WTQ/train-00002-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/robut_WTQ/train-00002-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4197
+  },
+  "scienceqa(cauldron,llava_format)": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/scienceqa(cauldron,llava_format)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/scienceqa(cauldron,llava_format)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 3178
+  },
+  "scienceqa(nona_context)-00000": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/scienceqa(nona_context)/train-00000-of-00002",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/scienceqa(nona_context)/train-00000-of-00002.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "scienceqa(nona_context)-00001": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/scienceqa(nona_context)/train-00001-of-00002",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/scienceqa(nona_context)/train-00001-of-00002.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 3156
+  },
+  "screen2words": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/screen2words/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/screen2words/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1555
+  },
+  "vistext": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/vistext/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/vistext/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1294
+  },
+  "visual7w(cauldron,llava_format)": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/visual7w(cauldron,llava_format)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/visual7w(cauldron,llava_format)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 3225
+  },
+  "VizWiz(MathV360K)": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/VizWiz(MathV360K)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/VizWiz(MathV360K)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1831
+  },
+  "vsr(cauldron,llava_format)": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/vsr(cauldron,llava_format)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision/vsr(cauldron,llava_format)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 942
+  },
+  "ai2d-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/ai2d/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/ai2d/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1983
+  },
+  "ai2d(internvl)-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/ai2d(internvl)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/ai2d(internvl)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8584
+  },
+  "chart2text-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/chart2text/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/chart2text/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4383
+  },
+  "doc_vqa-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/doc_vqa/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/doc_vqa/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1938
+  },
+  "dvqa(cauldron,llava_format)-korean-00000": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/dvqa(cauldron,llava_format)/train-00000-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/dvqa(cauldron,llava_format)/train-00000-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "dvqa(cauldron,llava_format)-korean-00001": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/dvqa(cauldron,llava_format)/train-00001-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/dvqa(cauldron,llava_format)/train-00001-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "dvqa(cauldron,llava_format)-korean-00002": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/dvqa(cauldron,llava_format)/train-00002-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/dvqa(cauldron,llava_format)/train-00002-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 6814
+  },
+  "geo170k(qa)-korean-00000": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00000-of-00004",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/geo170k(qa)/train-00000-of-00004.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "geo170k(qa)-korean-00001": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00001-of-00004",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/geo170k(qa)/train-00001-of-00004.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "geo170k(qa)-korean-00002": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00002-of-00004",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/geo170k(qa)/train-00002-of-00004.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "geo170k(qa)-korean-00003": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geo170k(qa)/train-00003-of-00004",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/geo170k(qa)/train-00003-of-00004.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1840
+  },
+  "Geometry3K(MathV360K)-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/Geometry3K(MathV360K)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/Geometry3K(MathV360K)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4663
+  },
+  "geomverse-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/geomverse/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/geomverse/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4838
+  },
+  "iconqa(cauldron,llava_format)-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/iconqa(cauldron,llava_format)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/iconqa(cauldron,llava_format)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8193
+  },
+  "IconQA(MathV369K)-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/IconQA(MathV369K)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/IconQA(MathV369K)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 7371
+  },
+  "infographic_vqa-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/infographic_vqa/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/infographic_vqa/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2235
+  },
+  "infographic(gpt4v)-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/infographic(gpt4v)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/infographic(gpt4v)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 321
+  },
+  "intergps-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/intergps/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/intergps/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 640
+  },
+  "raven-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/raven/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/raven/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1486
+  },
+  "robut_WTQ-korean-00000": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/robut_WTQ/train-00000-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/robut_WTQ/train-00000-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "robut_WTQ-korean-00001": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/robut_WTQ/train-00001-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/robut_WTQ/train-00001-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "robut_WTQ-korean-00002": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/robut_WTQ/train-00002-of-00003",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/robut_WTQ/train-00002-of-00003.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4197
+  },
+  "scienceqa(cauldron,llava_format)-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/scienceqa(cauldron,llava_format)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/scienceqa(cauldron,llava_format)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 3178
+  },
+  "scienceqa(nona_context)-korean-00000": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/scienceqa(nona_context)/train-00000-of-00002",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/scienceqa(nona_context)/train-00000-of-00002.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10000
+  },
+  "scienceqa(nona_context)-korean-00001": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/scienceqa(nona_context)/train-00001-of-00002",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/scienceqa(nona_context)/train-00001-of-00002.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 3156
+  },
+  "screen2words-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/screen2words/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/screen2words/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1555
+  },
+  "vistext-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/vistext/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/vistext/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1294
+  },
+  "visual7w(cauldron,llava_format)-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/visual7w(cauldron,llava_format)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/visual7w(cauldron,llava_format)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 3225
+  },
+  "VizWiz(MathV360K)-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/VizWiz(MathV360K)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/VizWiz(MathV360K)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1831
+  },
+  "vsr(cauldron,llava_format)-korean": {
+    "root": "/opt/dlami/nvme/data/R1-Onevision/vsr(cauldron,llava_format)/train-00000-of-00001",
+    "annotation": "/opt/dlami/nvme/data/R1-Onevision-korean/vsr(cauldron,llava_format)/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 942
+  },
+  "CRIT_gqa_train_final_data_cot": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/gqa_train_final_data_cot.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 49151
+  },
+  "CRIT_video_train_final_data_direct_ans": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/video_train_final_data_direct_ans.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8010
+  },
+  "CRIT_scientific_paper_train_final_data_cot": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/scientific_paper_train_final_data_cot.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 27018
+  },
+  "CRIT_gqa_train_final_data_direct_ans": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/gqa_train_final_data_direct_ans.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 49151
+  },
+  "CRIT_scientific_paper_train_final_data_direct_ans": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/scientific_paper_train_final_data_direct_ans.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 27018
+  },
+  "CRIT_video_train_final_data_cot": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/video_train_final_data_cot.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8010
+  },
+  "CRIT_gqa_train_final_data_cot_korean": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/gqa_train_final_data_cot_korean.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 46382
+  },
+  "CRIT_video_train_final_data_direct_ans_korean": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/video_train_final_data_direct_ans_korean.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8010
+  },
+  "CRIT_scientific_paper_train_final_data_cot_korean": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/scientific_paper_train_final_data_cot_korean.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 27018
+  },
+  "CRIT_gqa_train_final_data_direct_ans_korean": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/gqa_train_final_data_direct_ans_korean.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 40164
+  },
+  "CRIT_scientific_paper_train_final_data_direct_ans_korean": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/scientific_paper_train_final_data_direct_ans_korean.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 27018
+  },
+  "CRIT_video_train_final_data_cot_korean": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/video_train_final_data_cot_korean.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8010
+  },
+  "CLEVR/train-00000-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00000-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00000-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00001-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00001-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00001-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00002-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00002-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00002-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00003-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00003-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00003-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00004-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00004-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00004-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00005-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00005-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00005-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00006-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00006-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00006-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00007-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00007-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00007-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00008-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00008-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00008-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00009-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00009-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00009-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00010-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00010-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00010-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00011-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00011-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00011-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00012-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00012-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00012-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00013-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00013-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00013-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00014-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00014-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00014-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00015-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00015-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00015-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00016-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00016-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00016-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00017-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00017-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00017-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00018-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00018-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00018-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00019-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00019-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00019-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00020-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00020-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00020-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00021-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00021-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00021-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00022-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00022-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00022-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00023-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00023-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00023-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00024-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00024-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00024-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00025-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00025-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00025-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00026-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00026-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00026-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00027-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00027-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00027-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00028-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00028-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00028-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00029-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00029-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00029-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00030-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00030-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00030-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00031-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00031-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00031-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00032-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00032-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00032-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00033-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00033-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00033-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00034-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00034-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00034-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00035-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00035-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00035-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00036-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00036-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00036-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00037-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00037-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00037-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00038-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00038-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00038-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00039-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00039-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00039-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00040-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00040-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00040-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00041-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00041-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00041-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00042-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00042-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00042-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00043-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00043-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00043-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00044-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00044-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00044-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00045-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00045-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00045-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00046-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00046-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00046-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00047-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00047-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00047-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00048-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00048-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00048-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00049-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00049-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00049-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00050-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00050-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00050-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00051-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00051-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00051-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00052-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00052-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00052-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00053-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00053-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00053-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00054-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00054-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00054-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00055-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00055-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00055-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00056-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00056-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00056-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00057-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00057-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00057-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00058-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00058-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00058-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00059-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00059-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00059-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00060-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00060-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00060-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00061-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00061-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00061-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00062-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00062-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00062-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00063-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00063-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00063-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00064-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00064-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00064-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00065-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00065-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00065-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00066-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00066-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00066-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00067-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00067-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00067-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00068-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00068-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00068-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00069-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00069-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00069-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00070-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00070-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00070-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00071-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00071-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00071-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00072-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00072-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00072-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00073-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00073-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00073-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00074-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00074-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00074-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00075-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00075-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00075-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00076-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00076-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00076-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00077-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00077-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00077-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00078-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00078-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00078-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00079-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00079-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00079-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00080-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00080-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00080-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00081-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00081-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00081-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00082-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00082-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00082-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00083-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00083-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00083-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00084-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00084-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00084-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00085-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00085-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00085-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00086-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00086-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00086-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00087-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00087-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00087-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00088-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00088-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00088-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00089-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00089-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00089-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00090-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00090-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00090-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00091-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00091-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00091-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00092-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00092-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00092-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00093-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00093-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00093-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00094-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00094-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00094-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00095-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00095-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00095-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00096-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00096-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00096-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00097-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00097-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00097-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00098-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00098-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00098-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00099-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00099-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00099-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00100-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00100-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00100-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00101-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00101-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00101-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00102-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00102-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00102-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00103-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00103-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00103-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00104-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00104-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00104-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00105-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00105-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00105-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00106-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00106-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00106-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00107-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00107-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00107-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00108-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00108-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00108-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00109-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00109-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00109-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00110-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00110-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00110-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00111-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00111-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00111-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00112-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00112-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00112-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00113-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00113-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00113-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00114-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00114-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00114-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00115-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00115-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00115-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00116-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00116-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00116-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00117-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00117-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00117-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00118-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00118-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00118-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00119-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00119-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00119-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00120-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00120-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00120-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00121-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00121-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00121-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00122-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00122-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00122-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00123-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00123-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00123-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00124-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00124-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00124-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00125-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00125-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00125-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00126-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00126-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00126-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00127-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00127-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00127-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00128-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00128-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00128-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00129-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00129-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00129-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00130-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00130-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00130-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00131-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00131-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00131-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00132-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00132-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00132-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00133-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00133-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00133-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00134-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00134-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00134-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00135-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00135-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00135-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00136-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00136-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00136-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00137-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00137-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00137-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00138-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00138-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00138-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00139-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00139-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00139-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00140-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00140-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00140-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00141-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00141-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00141-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00142-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00142-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00142-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00143-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00143-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00143-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00144-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00144-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00144-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00145-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00145-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00145-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00146-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00146-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00146-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00147-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00147-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00147-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00148-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00148-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00148-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00149-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00149-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00149-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00150-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00150-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00150-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00151-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00151-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00151-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00152-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00152-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00152-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00153-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00153-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00153-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00154-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00154-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00154-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00155-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00155-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00155-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00156-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00156-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00156-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2663
+  },
+  "CLEVR/train-00157-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00157-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00157-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00158-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00158-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00158-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00159-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00159-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00159-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00160-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00160-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00160-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00161-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00161-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00161-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00162-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00162-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00162-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00163-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00163-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00163-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00164-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00164-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00164-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00165-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00165-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00165-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00166-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00166-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00166-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00167-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00167-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00167-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00168-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00168-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00168-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00169-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00169-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00169-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00170-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00170-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00170-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00171-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00171-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00171-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00172-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00172-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00172-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00173-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00173-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00173-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00174-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00174-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00174-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00175-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00175-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00175-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00176-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00176-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00176-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00177-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00177-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00177-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00178-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00178-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00178-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00179-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00179-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00179-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00180-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00180-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00180-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00181-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00181-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00181-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00182-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00182-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00182-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00183-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00183-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00183-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00184-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00184-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00184-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00185-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00185-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00185-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00186-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00186-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00186-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00187-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00187-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00187-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00188-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00188-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00188-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00189-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00189-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00189-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00190-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00190-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00190-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00191-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00191-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00191-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR/train-00192-of-00193": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00192-of-00193",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR/train-00192-of-00193.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2662
+  },
+  "CLEVR-Math/train-00000-of-00002": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR-Math/train-00000-of-00002",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR-Math/train-00000-of-00002.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2627
+  },
+  "CLEVR-Math/train-00001-of-00002": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR-Math/train-00001-of-00002",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/CLEVR-Math/train-00001-of-00002.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2627
+  },
+  "Docmatix-part-00-of-10/train-00000-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00000-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00000-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-00-of-10/train-00001-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00001-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00001-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-00-of-10/train-00002-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00002-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00002-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-00-of-10/train-00003-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00003-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00003-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-00-of-10/train-00004-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00004-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00004-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-00-of-10/train-00005-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00005-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00005-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-00-of-10/train-00006-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00006-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00006-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-00-of-10/train-00007-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00007-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00007-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-00-of-10/train-00008-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00008-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00008-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-00-of-10/train-00009-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00009-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00009-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-00-of-10/train-00010-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00010-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00010-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-00-of-10/train-00011-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00011-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00011-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-00-of-10/train-00012-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00012-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00012-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-00-of-10/train-00013-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00013-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00013-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-00-of-10/train-00014-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00014-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00014-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00015-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00015-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00015-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00016-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00016-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00016-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00017-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00017-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00017-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00018-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00018-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00018-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00019-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00019-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00019-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00020-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00020-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00020-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00021-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00021-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00021-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00022-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00022-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00022-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00023-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00023-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00023-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00024-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00024-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00024-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00025-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00025-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00025-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00026-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00026-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00026-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00027-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00027-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00027-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00028-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00028-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00028-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00029-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00029-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00029-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00030-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00030-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00030-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00031-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00031-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00031-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00032-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00032-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00032-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00033-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00033-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00033-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00034-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00034-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00034-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00035-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00035-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00035-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00036-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00036-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00036-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00037-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00037-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00037-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00038-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00038-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00038-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00039-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00039-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00039-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00040-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00040-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00040-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-00-of-10/train-00041-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00041-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-00-of-10/train-00041-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00000-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00000-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00000-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-01-of-10/train-00001-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00001-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00001-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-01-of-10/train-00002-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00002-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00002-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-01-of-10/train-00003-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00003-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00003-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-01-of-10/train-00004-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00004-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00004-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-01-of-10/train-00005-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00005-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00005-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-01-of-10/train-00006-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00006-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00006-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-01-of-10/train-00007-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00007-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00007-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-01-of-10/train-00008-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00008-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00008-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-01-of-10/train-00009-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00009-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00009-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-01-of-10/train-00010-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00010-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00010-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-01-of-10/train-00011-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00011-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00011-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-01-of-10/train-00012-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00012-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00012-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-01-of-10/train-00013-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00013-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00013-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1342
+  },
+  "Docmatix-part-01-of-10/train-00014-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00014-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00014-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00015-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00015-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00015-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00016-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00016-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00016-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00017-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00017-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00017-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00018-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00018-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00018-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00019-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00019-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00019-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00020-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00020-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00020-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00021-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00021-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00021-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00022-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00022-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00022-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00023-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00023-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00023-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00024-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00024-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00024-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00025-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00025-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00025-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00026-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00026-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00026-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00027-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00027-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00027-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00028-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00028-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00028-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00029-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00029-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00029-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00030-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00030-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00030-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00031-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00031-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00031-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00032-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00032-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00032-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00033-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00033-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00033-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00034-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00034-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00034-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00035-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00035-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00035-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00036-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00036-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00036-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00037-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00037-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00037-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00038-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00038-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00038-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00039-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00039-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00039-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00040-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00040-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00040-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-01-of-10/train-00041-of-00042": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00041-of-00042",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-01-of-10/train-00041-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1341
+  },
+  "Docmatix-part-02-of-10/train-00000-of-00041": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-02-of-10/train-00000-of-00041",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-02-of-10/train-00000-of-00041.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1375
+  },
+  "Docmatix-part-02-of-10/train-00001-of-00041": {
+    "root": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-02-of-10/train-00001-of-00041",
+    "annotation": "/opt/dlami/nvme/data/LLaVA-OneVision-1.5-Instruct-Data/Docmatix-part-02-of-10/train-00001-of-00041.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1375
+  },
+  "finevision_text_OpenMathInstruct-2": {
+    "root": "/opt/dlami/nvme/data/finevision/text_OpenMathInstruct-2/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/text_OpenMathInstruct-2/annotations.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 0
+  },
+  "finevision_textcaps_00010": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00010-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00018": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00018-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00026": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00026-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00034": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00034-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00008": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00008-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00016": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00016-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00024": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00024-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00032": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00032-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00004": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00004-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00012": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00012-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00020": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00020-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00028": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00028-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00036": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00036-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00006": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00006-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00014": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00014-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00022": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00022-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00030": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00030-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00002": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00002-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00009": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00009-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00017": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00017-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00025": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00025-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00033": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00033-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00007": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00007-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00015": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00015-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00023": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00023-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00031": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00031-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00005": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00005-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00013": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00013-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00021": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00021-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00029": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00029-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00003": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00003-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00011": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00011-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00019": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00019-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00027": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00027-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00035": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00035-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 592
+  },
+  "finevision_textcaps_00001": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00001-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 593
+  },
+  "finevision_textcaps_00000": {
+    "root": "/opt/dlami/nvme/data/finevision/textcaps/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textcaps/train-00000-of-00037.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 593
+  },
+  "finevision_textocr(gpt4v)_00028": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00028-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 596
+  },
+  "finevision_textocr(gpt4v)_00035": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00035-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 596
+  },
+  "finevision_textocr(gpt4v)_00033": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00033-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 596
+  },
+  "finevision_textocr(gpt4v)_00041": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00041-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 596
+  },
+  "finevision_textocr(gpt4v)_00030": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00030-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 596
+  },
+  "finevision_textocr(gpt4v)_00038": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00038-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 596
+  },
+  "finevision_textocr(gpt4v)_00032": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00032-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 596
+  },
+  "finevision_textocr(gpt4v)_00040": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00040-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 596
+  },
+  "finevision_textocr(gpt4v)_00036": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00036-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 596
+  },
+  "finevision_textocr(gpt4v)_00034": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00034-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 596
+  },
+  "finevision_textocr(gpt4v)_00031": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00031-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 596
+  },
+  "finevision_textocr(gpt4v)_00039": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00039-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 596
+  },
+  "finevision_textocr(gpt4v)_00029": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00029-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 596
+  },
+  "finevision_textocr(gpt4v)_00037": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00037-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 596
+  },
+  "finevision_textocr(gpt4v)_00004": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00004-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00012": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00012-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00020": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00020-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00001": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00001-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00009": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00009-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00017": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00017-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00025": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00025-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00006": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00006-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00014": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00014-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00022": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00022-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00008": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00008-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00016": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00016-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00024": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00024-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00003": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00003-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00011": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00011-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00019": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00019-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00027": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00027-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00002": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00002-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00010": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00010-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00018": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00018-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00026": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00026-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00000": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00000-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00007": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00007-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00015": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00015-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00023": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00023-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00005": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00005-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00013": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00013-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_textocr(gpt4v)_00021": {
+    "root": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textocr(gpt4v)/train-00021-of-00042.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 597
+  },
+  "finevision_text_theoremqa_00000": {
+    "root": "/opt/dlami/nvme/data/finevision/text_theoremqa/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/text_theoremqa/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 800
+  },
+  "finevision_text_ruozhiba_00000": {
+    "root": "/opt/dlami/nvme/data/finevision/text_ruozhiba/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/text_ruozhiba/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1496
+  },
+  "finevision_textvqa_00004": {
+    "root": "/opt/dlami/nvme/data/finevision/textvqa/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textvqa/train-00004-of-00005.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4388
+  },
+  "finevision_textvqa_00003": {
+    "root": "/opt/dlami/nvme/data/finevision/textvqa/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textvqa/train-00003-of-00005.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4388
+  },
+  "finevision_textvqa_00002": {
+    "root": "/opt/dlami/nvme/data/finevision/textvqa/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textvqa/train-00002-of-00005.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4389
+  },
+  "finevision_textvqa_00000": {
+    "root": "/opt/dlami/nvme/data/finevision/textvqa/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textvqa/train-00000-of-00005.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4389
+  },
+  "finevision_textvqa_00001": {
+    "root": "/opt/dlami/nvme/data/finevision/textvqa/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/textvqa/train-00001-of-00005.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4389
+  },
+  "finevision_text_mathstepdpo10k_00000": {
+    "root": "/opt/dlami/nvme/data/finevision/text_mathstepdpo10k/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/text_mathstepdpo10k/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 10795
+  },
+  "finevision_text_pythoncodealpaca_00000": {
+    "root": "/opt/dlami/nvme/data/finevision/text_pythoncodealpaca/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/text_pythoncodealpaca/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 18612
+  },
+  "finevision_text_pythoncode25k_00000": {
+    "root": "/opt/dlami/nvme/data/finevision/text_pythoncode25k/images",
+    "annotation": "/opt/dlami/nvme/data/finevision/text_pythoncode25k/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 49626
+  }
+}

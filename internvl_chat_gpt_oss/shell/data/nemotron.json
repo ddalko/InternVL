@@ -1,0 +1,296 @@
+{
+  "breakfast_actions": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/breakfast_actions/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/breakfast_actions/breakfast_actions_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1204
+  },
+  "ccpdf_multipage_1": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/ccpdf_multipage_1/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/ccpdf_multipage_1/ccpdf_multipage_1_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 6096
+  },
+  "ccpdf_multipage_2": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/ccpdf_multipage_2/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/ccpdf_multipage_2/ccpdf_multipage_2_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 420
+  },
+  "ccpdf_nv_notables": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/ccpdf_nv_notables/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/ccpdf_nv_notables/conversations_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 14234
+  },
+  "ccpdf_nv_qa": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/ccpdf_nv_qa/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/ccpdf_nv_qa/ccpdf_nv_qa_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1668
+  },
+  "ccpdf_nv_tables": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/ccpdf_nv_tables/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/ccpdf_nv_tables/conversations_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4113
+  },
+  "chartqa_cot": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/chartqa_cot/ChartQA Dataset",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/chartqa_cot/chartqa_cot_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 45710
+  },
+  "clevrer": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/clevrer/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/clevrer/clevrer_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 40000
+  },
+  "docvqa_cot": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/docvqa_cot",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/docvqa_cot/docvqa_cot_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 36333
+  },
+  "ego_exo_learn": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/ego_exo_learn/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/ego_exo_learn/ego_exo_learn_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 36365
+  },
+  "fintabnet_cot": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/fintabnet_cot/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/fintabnet_cot/fintabnet_cot_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8352
+  },
+  "geomverse_cot": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/geomverse_cot",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/geomverse_cot/geomverse_cot_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 9295
+  },
+  "hiertext": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/hiertext/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/hiertext/hiertext_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 514
+  },
+  "infographicsvqa_cot": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/infographicsvqa_cot/images",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/infographicsvqa_cot/infographicsvqa_cot_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 19548
+  },
+  "llava_cot_100k": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/llava_cot_100k/LLaVA-CoT-100k",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/llava_cot_100k/llava_cot_100k_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 63019
+  },
+  "mantis_instruct_cot": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/mantis_instruct_cot/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/mantis_instruct_cot/mantis_instruct_cot_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 67714
+  },
+  "mulberry_cot_1": {
+    "root": "/fsx/VLM/shared/data/raw/Nemotron-VLM-Dataset-v2",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/mulberry_cot_1/mulberry_cot_1_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 191332
+  },
+  "mulberry_cot_2": {
+    "root": "/fsx/VLM/shared/data/raw/Nemotron-VLM-Dataset-v2",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/mulberry_cot_2/mulberry_cot_2_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 103763
+  },
+  "nextqa": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/nextqa",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/nextqa/nextqa_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 34132
+  },
+  "nights_cot": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/nights_cot/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/nights_cot/nights_cot_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 12622
+  },
+  "oi_bbox_1": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/oi_bbox_1/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/oi_bbox_1/oi_bbox_1_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1664533
+  },
+  "oi_bbox_2": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/oi_bbox_2/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/oi_bbox_2/oi_bbox_2_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1664533
+  },
+  "oi_bbox_3": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/oi_bbox_3/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/oi_bbox_3/oi_bbox_3_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1128326
+  },
+  "perception_test_1": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/perception_test_1/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/perception_test_1/perception_test_1_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 7392
+  },
+  "perception_test_2": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/perception_test_2/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/perception_test_2/perception_test_2_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2135
+  },
+  "perception_test_cot": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/perception_test_cot/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/perception_test_cot/perception_test_cot_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4858
+  },
+  "plotqa_cot": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/plotqa_cot/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/plotqa_cot/plotqa_cot_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 16256
+  },
+  "sparsetables": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/sparsetables/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/sparsetables/sparsetables_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 100000
+  },
+  "tabmwp_cot": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/tabmwp_cot/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/tabmwp_cot/tabmwp_cot_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 20305
+  },
+  "unigeo_cot": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/unigeo_cot",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/unigeo_cot/unigeo_cot_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 9728
+  },
+  "visual7w_telling_cot": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/visual7w_telling_cot",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/visual7w_telling_cot/visual7w_telling_cot_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 62466
+  },
+  "visual_web_instruct_cot": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/visual_web_instruct_cot/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/visual_web_instruct_cot/visual_web_instruct_cot_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 47800
+  },
+  "wiki_de": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_de/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_de/wiki_de_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 200000
+  },
+  "wiki_en": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_en/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_en/wiki_en_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 200000
+  },
+  "wiki_es": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_es/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_es/wiki_es_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 200000
+  },
+  "wiki_fr": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_fr/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_fr/wiki_fr_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 200000
+  },
+  "wiki_it": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_it/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_it/wiki_it_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 200000
+  },
+  "wiki_ja": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_ja/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_ja/wiki_ja_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 200000
+  },
+  "wiki_ko": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_ko/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_ko/wiki_ko_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 200000
+  },
+  "wiki_nl": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_nl/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_nl/wiki_nl_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 200000
+  },
+  "wiki_pt": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_pt/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_pt/wiki_pt_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 200000
+  },
+  "wiki_zh": {
+    "root": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_zh/media",
+    "annotation": "/opt/dlami/nvme/data/Nemotron-VLM-Dataset-v2/wiki_zh/wiki_zh_instruct.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 200000
+  }
+}

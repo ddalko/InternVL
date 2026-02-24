@@ -5,6 +5,7 @@
 # --------------------------------------------------------
 
 import io
+import logging
 
 from transformers.trainer_pt_utils import LabelSmoother
 
@@ -14,6 +15,13 @@ import random
 import re
 from collections import Counter
 from typing import Dict
+
+# Setup logger for prompt logging
+logger = logging.getLogger(__name__)
+
+# Global counter for prompt logging (to limit logging to first few samples)
+_prompt_log_counter = 0
+_max_prompt_logs = int(os.environ.get('MAX_PROMPT_LOGS', 10))  # Log first 10 samples by default
 
 import cv2
 import imageio
@@ -489,6 +497,14 @@ def preprocess_internvl2_5(
         else:
             raise NotImplementedError(f"Unknown conversation role: {conversation['from']}")
 
+    # Log the first few prompts for debugging (only for CRIT dataset)
+    # global _prompt_log_counter
+    # if _prompt_log_counter < _max_prompt_logs and ds_name and 'CRIT' in ds_name.upper():
+    #     logger.warning(f"\n{'='*80}\nPROMPT LOG #{_prompt_log_counter + 1} (Dataset: {ds_name})\n{'='*80}")
+    #     full_prompt = ''.join(batches)
+    #     logger.warning(f"Full Prompt:\n{full_prompt}")
+    #     _prompt_log_counter += 1
+
     add_bos_token = getattr(tokenizer, 'add_bos_token', False)
     if add_bos_token:  # for InternLM series
         batches[0] = tokenizer.bos_token + batches[0]
@@ -597,6 +613,14 @@ def preprocess_internvl3_5_gpt_oss(
             roles.append('function')
         else:
             raise NotImplementedError(f"Invalid role: {conversation['from']}")
+
+    # Log the first few prompts for debugging (only for CRIT dataset)
+    # global _prompt_log_counter
+    # if _prompt_log_counter < _max_prompt_logs and ds_name and 'CRIT' in ds_name.upper():
+    #     logger.warning(f"\n{'='*80}\nPROMPT LOG #{_prompt_log_counter + 1} (Dataset: {ds_name})\n{'='*80}")
+    #     full_prompt = ''.join(batches)
+    #     logger.warning(f"Full Prompt:\n{full_prompt}")
+    #     _prompt_log_counter += 1
 
     add_bos_token = getattr(tokenizer, 'add_bos_token', False)
     if add_bos_token:  # for InternLM series

@@ -1,0 +1,240 @@
+{
+  "CRIT_gqa_train_final_data_cot": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/gqa_train_final_data_cot.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 49151
+  },
+  "CRIT_video_train_final_data_direct_ans": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/video_train_final_data_direct_ans.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8010
+  },
+  "CRIT_scientific_paper_train_final_data_cot": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/scientific_paper_train_final_data_cot.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 27018
+  },
+  "CRIT_gqa_train_final_data_direct_ans": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/gqa_train_final_data_direct_ans.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 49151
+  },
+  "CRIT_scientific_paper_train_final_data_direct_ans": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/scientific_paper_train_final_data_direct_ans.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 27018
+  },
+  "CRIT_video_train_final_data_cot": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/video_train_final_data_cot.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8010
+  },
+  "CRIT_gqa_train_final_data_cot_korean": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/gqa_train_final_data_cot_korean.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 46382
+  },
+  "CRIT_video_train_final_data_direct_ans_korean": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/video_train_final_data_direct_ans_korean.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8010
+  },
+  "CRIT_scientific_paper_train_final_data_cot_korean": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/scientific_paper_train_final_data_cot_korean.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 27018
+  },
+  "CRIT_gqa_train_final_data_direct_ans_korean": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/gqa_train_final_data_direct_ans_korean.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 40164
+  },
+  "CRIT_scientific_paper_train_final_data_direct_ans_korean": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/scientific_paper_train_final_data_direct_ans_korean.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 27018
+  },
+  "CRIT_video_train_final_data_cot_korean": {
+    "root": "/opt/dlami/nvme/data/CRIT/",
+    "annotation": "/opt/dlami/nvme/data/CRIT/video_train_final_data_cot_korean.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8010
+  },
+  "birds-to-words/train-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/birds-to-words/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/birds-to-words/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 2649
+  },
+  "birds-to-words/val-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/birds-to-words/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/birds-to-words/val-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 322
+  },
+  "chartqa/train-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/chartqa/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/chartqa/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 28299
+  },
+  "chartqa/val-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/chartqa/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/chartqa/val-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1920
+  },
+  "coinstruct/train-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/coinstruct/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/coinstruct/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 150918
+  },
+  "contrastive_caption/train-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/contrastive_caption/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/contrastive_caption/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 35984
+  },
+  "docvqa/train-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/docvqa/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/docvqa/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 39463
+  },
+  "dreamsim/train-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/dreamsim/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/dreamsim/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 15941
+  },
+  "dreamsim/val-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/dreamsim/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/dreamsim/val-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 1958
+  },
+  "dvqa/train-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/dvqa/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/dvqa/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 200000
+  },
+  "iconqa/train-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/iconqa/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/iconqa/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 64462
+  },
+  "imagecode/train-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/imagecode/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/imagecode/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 16594
+  },
+  "llava_665k_multi/train-00000-of-00002": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/llava_665k_multi/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/llava_665k_multi/train-00000-of-00002.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 156306
+  },
+  "llava_665k_multi/train-00001-of-00002": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/llava_665k_multi/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/llava_665k_multi/train-00001-of-00002.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 156305
+  },
+  "lrv_multi/train-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/lrv_multi/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/lrv_multi/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8453
+  },
+  "multi_vqa/train-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/multi_vqa/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/multi_vqa/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 4993
+  },
+  "nextqa/train-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/nextqa/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/nextqa/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 3870
+  },
+  "nlvr2/train-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/nlvr2/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/nlvr2/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 86373
+  },
+  "nlvr2/val-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/nlvr2/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/nlvr2/val-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 6982
+  },
+  "spot-the-diff/train-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/spot-the-diff/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/spot-the-diff/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8007
+  },
+  "star/train-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/star/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/star/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 3032
+  },
+  "visual_story_telling/train-00000-of-00001": {
+    "root": "/opt/dlami/nvme/data/Mantis-Instruct/visual_story_telling/images",
+    "annotation": "/opt/dlami/nvme/data/Mantis-Instruct/visual_story_telling/train-00000-of-00001.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 6661
+  }
+}
